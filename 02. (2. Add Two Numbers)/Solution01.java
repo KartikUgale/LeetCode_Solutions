@@ -17,7 +17,7 @@
     }
 */
 
-class Solution {
+class Solution01 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode curr = new ListNode(0);
         ListNode tempHead = curr;
@@ -27,12 +27,12 @@ class Solution {
             int sum = powNum;
 
             if(l1 != null) {
-                sum += l1.val;
+                sum += l1.data;
                 l1 = l1.next;
             }
 
             if(l2 != null) {
-                sum += l2.val;
+                sum += l2.data;
                 l2 = l2.next;
             }
 
